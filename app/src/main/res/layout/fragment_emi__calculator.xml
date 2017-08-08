@@ -1,0 +1,147 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.segundoauqui.navegationapp.EMI_Calculator">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.segundoauqui.mycamera.EmiActivity"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutForPrice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textViewProgressID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Select Rate"
+                android:textSize="35dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+
+
+            <SeekBar
+                android:id="@+id/seekBarID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewProgressID"
+                android:layout_marginTop="26dp"
+                android:max="100" >
+            </SeekBar>
+
+            <TextView
+                android:id="@+id/initial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 0"
+                android:layout_below="@+id/seekBarID"/>
+
+            <TextView
+                android:id="@+id/tvMiddle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_below="@+id/seekBarID"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/final1"
+                android:layout_below="@+id/seekBarID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Rs 100"/>
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etLoanAmount"
+            android:textSize="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Loan Amount"
+            android:inputType="numberDecimal"
+            android:layout_weight="0.10" />
+
+
+
+        <EditText
+            android:id="@+id/etDuration"
+            android:textSize="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration in Years"
+            android:inputType="number"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:text="Calculate"
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:onClick="calculate"
+            android:layout_weight="0.13" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="Monthly (EMI) : "
+            android:textSize="30dp"/>
+
+
+
+        <TextView
+            android:textSize="25dp"
+            android:id="@+id/tvMonthlyResult"
+            android:text="0.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:text="Total Amount to Pay: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:textSize="30dp"
+            />
+
+
+        <TextView
+            android:textSize="25dp"
+            android:id="@+id/tvYearlyResult"
+            android:text="0.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

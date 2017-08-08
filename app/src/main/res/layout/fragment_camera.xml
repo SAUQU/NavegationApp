@@ -1,0 +1,39 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.segundoauqui.navegationapp.Camera">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.segundoauqui.mycamera.MainActivity"
+        android:weightSum="1">
+
+        <Button
+            android:text="Camera"
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="712dp"
+            android:id="@+id/ivImage" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+

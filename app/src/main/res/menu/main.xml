@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/action_moreOptions"
+        android:orderInCategory="100"
+        android:title="More Options/Settings"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_myApps"
+        android:orderInCategory="100"
+        android:title="My Apps"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_myHelp"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="never" />
+
+
+
+
+
+    <item
+        android:id="@+id/back"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        app:showAsAction="always"
+        android:title="Back" />
+
+
+
+
+
+
+</menu>
